@@ -11,8 +11,20 @@ public class VerbeGroupe3Aitre extends Verbe{
 	public String getFin() {
 		return "aitre";
 	}
-	
+
+	public String avantTerminaison1erePersonneSingulier() {
+		return "";
+	}
+
 	public String terminaison1erePersonneSingulier() {
+		return "ais";
+	}
+
+	public String avantTerminaison2emePersonneSingulier() {
+		return "";
+	}
+
+	public String terminaison2emePersonneSingulier() {
 		return "ais";
 	}
 

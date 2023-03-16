@@ -58,14 +58,19 @@ public class MultiThread extends Thread {
 
                 Verbe res = expert.resoudre(verbe);
 
-                String texte = "Infinitif saisi: " + verbe + "\n"
-                        + res.conjugue1erePersonneSingulier() + "\n"
-                        //+ res.conjugueDeuxiemePersonneSingulier() + "\n"
+                String texte;
+                if(res==null){
+                    texte = "Le verbe '" + verbe + "' n'est pas géré";
+                }else{
+                    texte =
+                        res.conjugue1erePersonneSingulier() + "\n"
+                        + res.conjugue2emePersonneSingulier() + "\n"
                         //+ res.conjugueTroisiemePersonneSingulier() + "\n"
                         + res.conjugue1erePersonnePluriel() + "\n"
                         //+ res.conjugueDeuxiemePersonnePluriel() + "\n"
                         //+ res.conjugueTroisiemePersonnePluriel() + "\n"
                         ;
+                }
 
                 int nbline = countLines(texte);
 
@@ -73,9 +78,9 @@ public class MultiThread extends Thread {
                 sleep(5);
             }
 
-        } catch(InterruptedException erreur) {
+        } catch(InterruptedException erreur) {}
             // le thread s'arrête
-        } catch(IOException erreur) {
+        catch(IOException erreur) {
             System.err.println(" on ne peut pas lire sur le socket provenant du client");
         }
     }

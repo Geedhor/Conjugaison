@@ -8,6 +8,8 @@ public class VerbeGroupe1G extends VerbeGroupe1{
 	public String avantTerminaison1erePersonneSingulier() {
 		return "g";
 	}
+
+	public String avantTerminaison2emePersonneSingulier() { return "g"; }
 	
 	public String avantTerminaison1erePersonnePluriel() {
 		return "ge";	

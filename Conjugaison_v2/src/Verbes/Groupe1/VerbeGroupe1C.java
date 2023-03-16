@@ -9,6 +9,8 @@ public class VerbeGroupe1C extends VerbeGroupe1{
 	public String avantTerminaison1erePersonneSingulier() {
 		return "c";
 	}
+
+	public String avantTerminaison2emePersonneSingulier() { return "c"; }
 	
 	public String avantTerminaison1erePersonnePluriel() {
 		return "ç";

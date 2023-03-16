@@ -10,8 +10,20 @@ public class VerbeGroupe2 extends Verbe{
 	public String getFin() {
 		return "ir";
 	}
+
+	public String avantTerminaison1erePersonneSingulier() {
+		return "";
+	}
 	
 	public String terminaison1erePersonneSingulier() {
+		return "is";
+	}
+
+	public String avantTerminaison2emePersonneSingulier() {
+		return "";
+	}
+
+	public String terminaison2emePersonneSingulier() {
 		return "is";
 	}
 	

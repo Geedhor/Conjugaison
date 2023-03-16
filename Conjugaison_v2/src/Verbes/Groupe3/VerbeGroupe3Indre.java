@@ -12,7 +12,19 @@ public class VerbeGroupe3Indre extends Verbe{
 		return "indre";
 	}
 
+	public String avantTerminaison1erePersonneSingulier() {
+		return "";
+	}
+
 	public String terminaison1erePersonneSingulier() {
+		return "ins";
+	}
+
+	public String avantTerminaison2emePersonneSingulier() {
+		return "";
+	}
+
+	public String terminaison2emePersonneSingulier() {
 		return "ins";
 	}
 

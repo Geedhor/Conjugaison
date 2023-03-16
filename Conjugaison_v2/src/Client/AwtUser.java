@@ -3,8 +3,6 @@ package Client;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -19,11 +17,11 @@ public class AwtUser extends Frame{
         // Configuration de la page //
         Font myFont = new Font("Conjugaison", Font.PLAIN, 15);
         setSize(700,600);
-        setTitle("Utilisateur1");
+        //setTitle("Utilisateur1");
         setLayout(null);
         setBackground(new java.awt.Color(211,211,211));
         setVisible(true);
-        
+
         //setResizable(false);
         //**************************//
 

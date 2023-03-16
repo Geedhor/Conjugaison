@@ -11,9 +11,15 @@ public abstract class Verbe {
 			throw new IllegalArgumentException("Verbe incorrect");
 		}
 	}
-	
+
+	//------------------------------------------------//
+
 	public String conjugue1erePersonneSingulier() {
 		return jOuJe() + this.radical + this.terminaison1erePersonneSingulier();
+	}
+
+	public String conjugue2emePersonneSingulier() {
+		return "Tu " + this.radical + this.terminaison2emePersonneSingulier();
 	}
 	
 	public String conjugue1erePersonnePluriel() {
@@ -27,7 +33,9 @@ public abstract class Verbe {
 	public String conjugueParticipePasse() {
 		return this.radical + this.terminaisonParticipePasse();
 	}
-	
+
+	//------------------------------------------------//
+
 	public boolean estVoyelle(String c) {
 		return "aeiouy".contains(c);
 	}
@@ -49,20 +57,34 @@ public abstract class Verbe {
 	public int tailleFin() {
 		return getFin().length();
 	}
+
+	//------------------------------------------------//
 	
-	public abstract String terminaison1erePersonneSingulier();
+	public String terminaison1erePersonneSingulier() {
+		return avantTerminaison1erePersonneSingulier() + terminaison1erePersonneSingulier();
+	}
+
+	public String terminaison2emePersonneSingulier() {
+		return avantTerminaison2emePersonneSingulier() + terminaison2emePersonneSingulier();
+	}
 	
 	public String terminaison1erePersonnePluriel() {
 		return avantTerminaison1erePersonnePluriel() + "ons";
 	}
-	
-	public abstract String avantTerminaison1erePersonnePluriel();
-	
+
 	public String terminaisonParticipePresent() {
 		return avantTerminaisonParticipePresent() + "ant";
 	}
+
+	public abstract String terminaisonParticipePasse();
+
+	//------------------------------------------------//
+	public abstract String avantTerminaison2emePersonneSingulier();
+
+	public abstract String avantTerminaison1erePersonneSingulier();
+
+	public abstract String avantTerminaison1erePersonnePluriel();
 	
 	public abstract String avantTerminaisonParticipePresent();
-	
-	public abstract String terminaisonParticipePasse();
+
 }
