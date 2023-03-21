@@ -39,8 +39,12 @@ public class VerbeGroupe1 extends Verbe{
 	}
 	
 	
+	public String avantTerminaisonParticipePasse() {
+		return "";
+	}
+	
 	public String terminaisonParticipePasse() { 
-		return "é"; 
+		return avantTerminaisonParticipePasse + "é"; 
 	}
 
 }
