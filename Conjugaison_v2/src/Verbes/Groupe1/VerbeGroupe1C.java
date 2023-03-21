@@ -20,7 +20,7 @@ public class VerbeGroupe1C extends VerbeGroupe1{
 		return "ç";
 	}
 	
-	public String terminaisonParticipePasse() {
+	public String avantTerminaisonParticipePasse() {
 		return "c";
 	}
 	
