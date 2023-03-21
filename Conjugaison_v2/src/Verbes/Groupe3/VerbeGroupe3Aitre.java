@@ -26,7 +26,7 @@ public class VerbeGroupe3Aitre extends Verbe{
 	}
 
 	public String terminaison2emePersonneSingulier() {
-		return avantTerminaison2emePersonneSingulier + "ais";
+		return avantTerminaison2emePersonneSingulier() + "ais";
 	}
 	
 	
@@ -35,7 +35,7 @@ public class VerbeGroupe3Aitre extends Verbe{
 	}
 
 	public String terminaison3emePersonneSingulier() {
-		return avantTerminaison3emePersonneSingulier + "aît";
+		return avantTerminaison3emePersonneSingulier() + "aît";
 	}
 
 	
