@@ -22,6 +22,10 @@ public abstract class Verbe {
 		return "Tu " + this.radical + this.terminaison2emePersonneSingulier();
 	}
 	
+	public String conjugue3emePersonneSingulier() {
+		return "Il/Elle/On " + this.radical + this.terminaison3emePersonneSingulier();
+	}
+	
 	public String conjugue1erePersonnePluriel() {
 		return "Nous " + this.radical + this.terminaison1erePersonnePluriel();
 	}
@@ -68,6 +72,10 @@ public abstract class Verbe {
 		return avantTerminaison2emePersonneSingulier() + terminaison2emePersonneSingulier();
 	}
 	
+	public String terminaison3emePersonneSingulier() {
+		return avantTerminaison3emePersonneSingulier() + terminaison3emePersonneSingulier();
+	}
+	
 	public String terminaison1erePersonnePluriel() {
 		return avantTerminaison1erePersonnePluriel() + "ons";
 	}
@@ -79,9 +87,12 @@ public abstract class Verbe {
 	public abstract String terminaisonParticipePasse();
 
 	//------------------------------------------------//
-	public abstract String avantTerminaison2emePersonneSingulier();
 
 	public abstract String avantTerminaison1erePersonneSingulier();
+	
+	public abstract String avantTerminaison2emePersonneSingulier();
+	
+	public abstract String avantTerminaison3emePersonneSingulier();
 
 	public abstract String avantTerminaison1erePersonnePluriel();
 	
