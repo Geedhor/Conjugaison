@@ -17,25 +17,29 @@ public class VerbeGroupe3Aitre extends Verbe{
 	}
 
 	public String terminaison1erePersonneSingulier() {
-		return "ais";
+		return avantTerminaison1erePersonneSingulier() + "ais";
 	}
 
+	
 	public String avantTerminaison2emePersonneSingulier() {
 		return "";
 	}
 
 	public String terminaison2emePersonneSingulier() {
-		return "ais";
+		return avantTerminaison2emePersonneSingulier + "ais";
 	}
 
+	
 	public String avantTerminaison1erePersonnePluriel() {
 		return "aiss";
 	}
 
+	
 	public String avantTerminaisonParticipePresent() {
 		return "aiss";
 	}
 
+	
 	public String terminaisonParticipePasse() {
 		return "u";
 	}
