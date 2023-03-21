@@ -16,24 +16,28 @@ public class VerbeGroupe2 extends Verbe{
 	}
 	
 	public String terminaison1erePersonneSingulier() {
-		return "is";
+		return avantTerminaison1erePersonneSingulier() + "is";
 	}
 
+	
 	public String avantTerminaison2emePersonneSingulier() {
 		return "";
 	}
 
 	public String terminaison2emePersonneSingulier() {
-		return "is";
+		return avantTerminaison2emePersonneSingulier() + "is";
 	}
+	
 	
 	public String avantTerminaison1erePersonnePluriel() {
 		return "iss";
 	}
 	
+	
 	public String avantTerminaisonParticipePresent() {
 		return "iss";
 	}
+	
 	
 	public String terminaisonParticipePasse() {
 		return "i";
