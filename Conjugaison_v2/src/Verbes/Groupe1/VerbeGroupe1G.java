@@ -19,7 +19,7 @@ public class VerbeGroupe1G extends VerbeGroupe1{
 		return "ge";
 	}
 	
-	public String terminaisonParticipePasse() {
+	public String avantTerminaisonParticipePasse() {
 		return "g";
 	}
 	
