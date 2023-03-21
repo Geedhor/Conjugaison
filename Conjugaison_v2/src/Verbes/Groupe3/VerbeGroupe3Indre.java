@@ -17,25 +17,38 @@ public class VerbeGroupe3Indre extends Verbe{
 	}
 
 	public String terminaison1erePersonneSingulier() {
-		return "ins";
+		return avantTerminaison1erePersonneSingulier() + "ins";
 	}
 
+	
 	public String avantTerminaison2emePersonneSingulier() {
-		return "";
+		return avantTerminaison2emePersonneSingulier() + "";
 	}
 
 	public String terminaison2emePersonneSingulier() {
 		return "ins";
 	}
+	
+	
+	public String avantTerminaison3emePersonneSingulier() {
+		return "";
+	}
 
+	public String terminaison3emePersonneSingulier() {
+		return avantTerminaison3emePersonneSingulier() + "int";
+	}
+
+	
 	public String avantTerminaison1erePersonnePluriel() {
 		return "ign";
 	}
 
+	
 	public String avantTerminaisonParticipePresent() {
 		return "ign";
 	}
 
+	
 	public String terminaisonParticipePasse() {
 		return "int";
 	}	
