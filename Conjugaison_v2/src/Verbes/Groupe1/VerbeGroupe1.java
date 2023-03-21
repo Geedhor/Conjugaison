@@ -16,16 +16,25 @@ public class VerbeGroupe1 extends Verbe{
 	}
 
 	public String terminaison1erePersonneSingulier() {
-		return avantTerminaison2erePersonneSingulier() + "e";
+		return avantTerminaison1erePersonneSingulier() + "e";
 	}
 
 	
 	public String avantTerminaison2emePersonneSingulier() { 
 		return ""; 
 	}
-
+	
 	public String terminaison2emePersonneSingulier() { 
 		return avantTerminaison2emePersonneSingulier + "es"; 
+	}
+	
+	
+	public String avantTerminaison3emePersonneSingulier() { 
+		return ""; 
+	}
+
+	public String terminaison1erePersonneSingulier() {
+		return avantTerminaison1erePersonneSingulier() + "e";
 	}
 
 
