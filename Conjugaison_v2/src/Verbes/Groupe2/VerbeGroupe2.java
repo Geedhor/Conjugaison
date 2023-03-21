@@ -29,6 +29,15 @@ public class VerbeGroupe2 extends Verbe{
 	}
 	
 	
+	public String avantTerminaison2emePersonneSingulier() {
+		return "";
+	}
+
+	public String terminaison2emePersonneSingulier() {
+		return avantTerminaison2emePersonneSingulier() + "it";
+	}
+	
+	
 	public String avantTerminaison1erePersonnePluriel() {
 		return "iss";
 	}
