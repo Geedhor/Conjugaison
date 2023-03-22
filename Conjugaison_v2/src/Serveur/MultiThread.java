@@ -65,7 +65,7 @@ public class MultiThread extends Thread {
                     texte =
                         res.conjugue1erePersonneSingulier() + "\n"
                         + res.conjugue2emePersonneSingulier() + "\n"
-                        //+ res.conjugueTroisiemePersonneSingulier() + "\n"
+                        + res.conjugue3emePersonneSingulier() + "\n"
                         + res.conjugue1erePersonnePluriel() + "\n"
                         //+ res.conjugueDeuxiemePersonnePluriel() + "\n"
                         //+ res.conjugueTroisiemePersonnePluriel() + "\n"

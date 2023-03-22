@@ -29,12 +29,12 @@ public class VerbeGroupe2 extends Verbe{
 	}
 	
 	
-	public String avantTerminaison2emePersonneSingulier() {
+	public String avantTerminaison3emePersonneSingulier() {
 		return "";
 	}
 
-	public String terminaison2emePersonneSingulier() {
-		return avantTerminaison2emePersonneSingulier() + "it";
+	public String terminaison3emePersonneSingulier() {
+		return avantTerminaison3emePersonneSingulier() + "it";
 	}
 	
 	

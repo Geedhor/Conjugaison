@@ -25,7 +25,7 @@ public class VerbeGroupe1 extends Verbe{
 	}
 	
 	public String terminaison2emePersonneSingulier() { 
-		return avantTerminaison2emePersonneSingulier + "es"; 
+		return avantTerminaison2emePersonneSingulier() + "es";
 	}
 	
 	
@@ -33,8 +33,8 @@ public class VerbeGroupe1 extends Verbe{
 		return ""; 
 	}
 
-	public String terminaison1erePersonneSingulier() {
-		return avantTerminaison1erePersonneSingulier() + "e";
+	public String terminaison3emePersonneSingulier() {
+		return avantTerminaison3emePersonneSingulier() + "e";
 	}
 
 
@@ -53,7 +53,7 @@ public class VerbeGroupe1 extends Verbe{
 	}
 	
 	public String terminaisonParticipePasse() { 
-		return avantTerminaisonParticipePasse + "é"; 
+		return avantTerminaisonParticipePasse() + "é";
 	}
 
 }
