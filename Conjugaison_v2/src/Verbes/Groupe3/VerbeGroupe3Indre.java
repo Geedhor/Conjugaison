@@ -16,17 +16,17 @@ public class VerbeGroupe3Indre extends Verbe{
 		return "";
 	}
 
-	public String terminaison1erePersonneSingulier() {
+	public String terminaison1erePersonneSingulierIndicatifPresent() {
 		return avantTerminaison1erePersonneSingulier() + "ins";
 	}
 
-	
+
 	public String avantTerminaison2emePersonneSingulier() {
-		return avantTerminaison2emePersonneSingulier() + "";
+		return "";
 	}
 
-	public String terminaison2emePersonneSingulier() {
-		return "ins";
+	public String terminaison2emePersonneSingulierIndicatifPresent() {
+		return avantTerminaison2emePersonneSingulier() + "ins";
 	}
 	
 	
@@ -34,7 +34,7 @@ public class VerbeGroupe3Indre extends Verbe{
 		return "";
 	}
 
-	public String terminaison3emePersonneSingulier() {
+	public String terminaison3emePersonneSingulierIndicatifPresent() {
 		return avantTerminaison3emePersonneSingulier() + "int";
 	}
 
@@ -43,13 +43,4 @@ public class VerbeGroupe3Indre extends Verbe{
 		return "ign";
 	}
 
-	
-	public String avantTerminaisonParticipePresent() {
-		return "ign";
-	}
-
-	
-	public String terminaisonParticipePasse() {
-		return "int";
-	}	
 }

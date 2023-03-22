@@ -74,7 +74,7 @@ public class AwtUser extends Frame{
         //**********************************//
 
         // boutton de demande de conjugaison//
-        Button Requete = new Button("envoi requête");
+        Button Requete = new Button("Conjuger");
         add(Requete);
         Requete.setBounds(70,350,100,25);
         //**********************************//

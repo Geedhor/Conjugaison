@@ -11,11 +11,13 @@ public class VerbeGroupe1 extends Verbe{
 		return "er";
 	}
 
+	//---------------------------------------------//
+
 	public String avantTerminaison1erePersonneSingulier() { 
 		return ""; 
 	}
 
-	public String terminaison1erePersonneSingulier() {
+	public String terminaison1erePersonneSingulierIndicatifPresent() {
 		return avantTerminaison1erePersonneSingulier() + "e";
 	}
 
@@ -24,36 +26,22 @@ public class VerbeGroupe1 extends Verbe{
 		return ""; 
 	}
 	
-	public String terminaison2emePersonneSingulier() { 
+	public String terminaison2emePersonneSingulierIndicatifPresent() {
 		return avantTerminaison2emePersonneSingulier() + "es";
 	}
 	
 	
 	public String avantTerminaison3emePersonneSingulier() { 
-		return ""; 
+		return "";
 	}
 
-	public String terminaison3emePersonneSingulier() {
+	public String terminaison3emePersonneSingulierIndicatifPresent() {
 		return avantTerminaison3emePersonneSingulier() + "e";
 	}
 
 
-	public String avantTerminaison1erePersonnePluriel() { 
-		return ""; 
-	}
-	
-	
-	public String avantTerminaisonParticipePresent() { 
-		return ""; 
-	}
-	
-	
-	public String avantTerminaisonParticipePasse() {
+	public String avantTerminaison1erePersonnePluriel() {
 		return "";
-	}
-	
-	public String terminaisonParticipePasse() { 
-		return avantTerminaisonParticipePasse() + "é";
 	}
 
 }

@@ -1,5 +1,7 @@
 package Serveur;
 
+import Conjugaison.Conjugaison;
+import Conjugaison.Indicatif.ConjugaisonIndicatifPresent;
 import Expert.*;
 import Verbes.Verbe;
 
@@ -57,19 +59,13 @@ public class MultiThread extends Thread {
 
 
                 Verbe res = expert.resoudre(verbe);
+                Conjugaison c = new ConjugaisonIndicatifPresent();
 
                 String texte;
                 if(res==null){
                     texte = "Le verbe '" + verbe + "' n'est pas géré";
                 }else{
-                    texte =
-                        res.conjugue1erePersonneSingulier() + "\n"
-                        + res.conjugue2emePersonneSingulier() + "\n"
-                        + res.conjugue3emePersonneSingulier() + "\n"
-                        + res.conjugue1erePersonnePluriel() + "\n"
-                        //+ res.conjugueDeuxiemePersonnePluriel() + "\n"
-                        //+ res.conjugueTroisiemePersonnePluriel() + "\n"
-                        ;
+                    texte = c.conjuger(res);
                 }
 
                 int nbline = countLines(texte);

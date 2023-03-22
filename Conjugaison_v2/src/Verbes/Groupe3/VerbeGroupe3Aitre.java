@@ -12,11 +12,12 @@ public class VerbeGroupe3Aitre extends Verbe{
 		return "aitre";
 	}
 
+
 	public String avantTerminaison1erePersonneSingulier() {
 		return "";
 	}
 
-	public String terminaison1erePersonneSingulier() {
+	public String terminaison1erePersonneSingulierIndicatifPresent() {
 		return avantTerminaison1erePersonneSingulier() + "ais";
 	}
 
@@ -25,7 +26,7 @@ public class VerbeGroupe3Aitre extends Verbe{
 		return "";
 	}
 
-	public String terminaison2emePersonneSingulier() {
+	public String terminaison2emePersonneSingulierIndicatifPresent() {
 		return avantTerminaison2emePersonneSingulier() + "ais";
 	}
 	
@@ -34,7 +35,7 @@ public class VerbeGroupe3Aitre extends Verbe{
 		return "";
 	}
 
-	public String terminaison3emePersonneSingulier() {
+	public String terminaison3emePersonneSingulierIndicatifPresent() {
 		return avantTerminaison3emePersonneSingulier() + "aît";
 	}
 
@@ -43,13 +44,4 @@ public class VerbeGroupe3Aitre extends Verbe{
 		return "aiss";
 	}
 
-	
-	public String avantTerminaisonParticipePresent() {
-		return "aiss";
-	}
-
-	
-	public String terminaisonParticipePasse() {
-		return "u";
-	}
 }

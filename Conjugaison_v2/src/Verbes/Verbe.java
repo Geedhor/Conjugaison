@@ -14,28 +14,20 @@ public abstract class Verbe {
 
 	//------------------------------------------------//
 
-	public String conjugue1erePersonneSingulier() {
-		return jOuJe() + this.radical + this.terminaison1erePersonneSingulier();
+	public String conjugue1erePersonneSingulierIndicatifPresent() {
+		return jOuJe() + this.radical + this.terminaison1erePersonneSingulierIndicatifPresent();
 	}
 
-	public String conjugue2emePersonneSingulier() {
-		return "Tu " + this.radical + this.terminaison2emePersonneSingulier();
+	public String conjugue2emePersonneSingulierIndicatifPresent() {
+		return "Tu " + this.radical + this.terminaison2emePersonneSingulierIndicatifPresent();
 	}
 	
-	public String conjugue3emePersonneSingulier() {
-		return "Il/Elle/On " + this.radical + this.terminaison3emePersonneSingulier();
+	public String conjugue3emePersonneSingulierIndicatifPresent() {
+		return "Il/Elle/On " + this.radical + this.terminaison3emePersonneSingulierIndicatifPresent();
 	}
 	
-	public String conjugue1erePersonnePluriel() {
-		return "Nous " + this.radical + this.terminaison1erePersonnePluriel();
-	}
-	
-	public String conjugueParticipePresent() {
-		return "En " + this.radical + this.terminaisonParticipePresent();
-	}
-	
-	public String conjugueParticipePasse() {
-		return this.radical + this.terminaisonParticipePasse();
+	public String conjugue1erePersonnePlurielIndicatifPresent() {
+		return "Nous " + this.radical + this.terminaison1erePersonnePlurielIndicatifPresent();
 	}
 
 	//------------------------------------------------//
@@ -63,28 +55,22 @@ public abstract class Verbe {
 	}
 
 	//------------------------------------------------//
-	
-	public String terminaison1erePersonneSingulier() {
-		return avantTerminaison1erePersonneSingulier() + terminaison1erePersonneSingulier();
+
+	public String terminaison1erePersonneSingulierIndicatifPresent() {
+		return avantTerminaison1erePersonneSingulier() + terminaison1erePersonneSingulierIndicatifPresent();
 	}
 
-	public String terminaison2emePersonneSingulier() {
-		return avantTerminaison2emePersonneSingulier() + terminaison2emePersonneSingulier();
+	public String terminaison2emePersonneSingulierIndicatifPresent() {
+		return avantTerminaison2emePersonneSingulier() + terminaison2emePersonneSingulierIndicatifPresent();
 	}
-	
-	public String terminaison3emePersonneSingulier() {
-		return avantTerminaison3emePersonneSingulier() + terminaison3emePersonneSingulier();
+
+	public String terminaison3emePersonneSingulierIndicatifPresent() {
+		return avantTerminaison3emePersonneSingulier() + terminaison3emePersonneSingulierIndicatifPresent();
 	}
-	
-	public String terminaison1erePersonnePluriel() {
+
+	public String terminaison1erePersonnePlurielIndicatifPresent() {
 		return avantTerminaison1erePersonnePluriel() + "ons";
 	}
-
-	public String terminaisonParticipePresent() {
-		return avantTerminaisonParticipePresent() + "ant";
-	}
-
-	public abstract String terminaisonParticipePasse();
 
 	//------------------------------------------------//
 
@@ -95,7 +81,5 @@ public abstract class Verbe {
 	public abstract String avantTerminaison3emePersonneSingulier();
 
 	public abstract String avantTerminaison1erePersonnePluriel();
-	
-	public abstract String avantTerminaisonParticipePresent();
 
 }
