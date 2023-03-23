@@ -20,4 +20,12 @@ public class ConjugaisonIndicatifPresent extends Conjugaison {
 	public String conjuguer1erePersonnePluriel(Verbe v) {
 		return v.conjugue1erePersonnePlurielIndicatifPresent();
 	}
+	
+	public String conjuguer2emePersonnePluriel(Verbe v) {
+		return v.conjugue2emePersonnePlurielInficatifPresent();
+	}
+	
+	public String conjuguer3emePersonnePluriel(Verbe v) {
+		return v.conjuguer3emePersonnePlurielIndicatifPresent();
+	}
 }
