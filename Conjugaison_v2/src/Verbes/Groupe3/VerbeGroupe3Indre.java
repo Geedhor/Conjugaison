@@ -42,5 +42,9 @@ public class VerbeGroupe3Indre extends Verbe{
 	public String avantTerminaison1erePersonnePluriel() {
 		return "ign";
 	}
+	
+	public String avantTerminaison2emePersonnePluriel() {
+		return "ign";
+	}
 
 }
