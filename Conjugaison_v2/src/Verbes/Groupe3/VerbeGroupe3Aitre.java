@@ -43,5 +43,9 @@ public class VerbeGroupe3Aitre extends Verbe{
 	public String avantTerminaison1erePersonnePluriel() {
 		return "aiss";
 	}
+	
+	public String avantTerminaison2emePersonnePluriel() {
+		return "aiss";
+	}
 
 }
