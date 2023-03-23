@@ -21,6 +21,10 @@ public class VerbeGroupe1G extends VerbeGroupe1{
 	public String avantTerminaison1erePersonnePluriel() {
 		return "ge";
 	}
+	
+	public String avantTerminaison2emePersonnePluriel() {
+		return "g";
+	}
 
 	
 	public String getFin() {
