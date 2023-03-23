@@ -22,10 +22,10 @@ public class ConjugaisonIndicatifPresent extends Conjugaison {
 	}
 	
 	public String conjuguer2emePersonnePluriel(Verbe v) {
-		return v.conjugue2emePersonnePlurielInficatifPresent();
+		return v.conjugue2emePersonnePlurielIndicatifPresent();
 	}
 	
 	public String conjuguer3emePersonnePluriel(Verbe v) {
-		return v.conjuguer3emePersonnePlurielIndicatifPresent();
+		return v.conjugue3emePersonnePlurielIndicatifPresent();
 	}
 }

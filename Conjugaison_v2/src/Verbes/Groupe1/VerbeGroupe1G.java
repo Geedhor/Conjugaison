@@ -6,23 +6,23 @@ public class VerbeGroupe1G extends VerbeGroupe1{
 		super(v);
 	}
 	
-	public String avantTerminaison1erePersonneSingulier() {
+	public String avantTerminaison1erePersonneSingulierIndicatifPresent() {
 		return "g";
 	}
 
-	public String avantTerminaison2emePersonneSingulier() { 
+	public String avantTerminaison2emePersonneSingulierIndicatifPresent() {
 		return "g"; 
 	}
 	
-	public String avantTerminaison3emePersonneSingulier() { 
+	public String avantTerminaison3emePersonneSingulierIndicatifPresent() {
 		return "g";
 	}
 	
-	public String avantTerminaison1erePersonnePluriel() {
+	public String avantTerminaison1erePersonnePlurielIndicatifPresent() {
 		return "ge";
 	}
 	
-	public String avantTerminaison2emePersonnePluriel() {
+	public String avantTerminaison2emePersonnePlurielIndicatifPresent() {
 		return "g";
 	}
 

@@ -12,38 +12,38 @@ public class VerbeGroupe3Indre extends Verbe{
 		return "indre";
 	}
 
-	public String avantTerminaison1erePersonneSingulier() {
+	public String avantTerminaison1erePersonneSingulierIndicatifPresent() {
 		return "";
 	}
 
 	public String terminaison1erePersonneSingulierIndicatifPresent() {
-		return avantTerminaison1erePersonneSingulier() + "ins";
+		return avantTerminaison1erePersonneSingulierIndicatifPresent() + "ins";
 	}
 
 
-	public String avantTerminaison2emePersonneSingulier() {
+	public String avantTerminaison2emePersonneSingulierIndicatifPresent() {
 		return "";
 	}
 
 	public String terminaison2emePersonneSingulierIndicatifPresent() {
-		return avantTerminaison2emePersonneSingulier() + "ins";
+		return avantTerminaison2emePersonneSingulierIndicatifPresent() + "ins";
 	}
 	
 	
-	public String avantTerminaison3emePersonneSingulier() {
+	public String avantTerminaison3emePersonneSingulierIndicatifPresent() {
 		return "";
 	}
 
 	public String terminaison3emePersonneSingulierIndicatifPresent() {
-		return avantTerminaison3emePersonneSingulier() + "int";
+		return avantTerminaison3emePersonneSingulierIndicatifPresent() + "int";
 	}
 
 	
-	public String avantTerminaison1erePersonnePluriel() {
+	public String avantTerminaison1erePersonnePlurielIndicatifPresent() {
 		return "ign";
 	}
 	
-	public String avantTerminaison2emePersonnePluriel() {
+	public String avantTerminaison2emePersonnePlurielIndicatifPresent() {
 		return "ign";
 	}
 

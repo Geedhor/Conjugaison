@@ -13,38 +13,38 @@ public class VerbeGroupe1 extends Verbe{
 
 	//---------------------------------------------//
 
-	public String avantTerminaison1erePersonneSingulier() { 
+	public String avantTerminaison1erePersonneSingulierIndicatifPresent() {
 		return ""; 
 	}
 
 	public String terminaison1erePersonneSingulierIndicatifPresent() {
-		return avantTerminaison1erePersonneSingulier() + "e";
+		return avantTerminaison1erePersonneSingulierIndicatifPresent() + "e";
 	}
 
 	
-	public String avantTerminaison2emePersonneSingulier() { 
+	public String avantTerminaison2emePersonneSingulierIndicatifPresent() {
 		return ""; 
 	}
 	
 	public String terminaison2emePersonneSingulierIndicatifPresent() {
-		return avantTerminaison2emePersonneSingulier() + "es";
+		return avantTerminaison2emePersonneSingulierIndicatifPresent() + "es";
 	}
 	
 	
-	public String avantTerminaison3emePersonneSingulier() { 
+	public String avantTerminaison3emePersonneSingulierIndicatifPresent() {
 		return "";
 	}
 
 	public String terminaison3emePersonneSingulierIndicatifPresent() {
-		return avantTerminaison3emePersonneSingulier() + "e";
+		return avantTerminaison3emePersonneSingulierIndicatifPresent() + "e";
 	}
 
 
-	public String avantTerminaison1erePersonnePluriel() {
+	public String avantTerminaison1erePersonnePlurielIndicatifPresent() {
 		return "";
 	}
 	
-	public String avantTerminaison2emePersonnePluriel() {
+	public String avantTerminaison2emePersonnePlurielIndicatifPresent() {
 		return "";
 	}
 

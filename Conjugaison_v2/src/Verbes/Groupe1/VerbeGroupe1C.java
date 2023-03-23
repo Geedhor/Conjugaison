@@ -7,23 +7,23 @@ public class VerbeGroupe1C extends VerbeGroupe1{
 	}
 
 
-	public String avantTerminaison1erePersonneSingulier() {
+	public String avantTerminaison1erePersonneSingulierIndicatifPresent() {
 		return "c";
 	}
 
-	public String avantTerminaison2emePersonneSingulier() { 
+	public String avantTerminaison2emePersonneSingulierIndicatifPresent() {
 		return "c"; 
 	}
 	
-	public String avantTerminaison3emePersonneSingulier() {
+	public String avantTerminaison3emePersonneSingulierIndicatifPresent() {
 		return "c";
 	}
 	
-	public String avantTerminaison1erePersonnePluriel() {
+	public String avantTerminaison1erePersonnePlurielIndicatifPresent() {
 		return "ç";
 	}
 	
-	public String avantTerminaison2emePersonnePluriel() {
+	public String avantTerminaison2emePersonnePlurielIndicatifPresent() {
 		return "c";
 	}
 	
