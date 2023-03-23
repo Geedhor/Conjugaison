@@ -42,5 +42,9 @@ public class VerbeGroupe2 extends Verbe{
 	public String avantTerminaison1erePersonnePluriel() {
 		return "iss";
 	}
+	
+	public String avantTerminaison2emePersonnePluriel() {
+		return "iss";
+	}
 
 }
