@@ -29,6 +29,14 @@ public abstract class Verbe {
 	public String conjugue1erePersonnePlurielIndicatifPresent() {
 		return "Nous " + this.radical + this.terminaison1erePersonnePlurielIndicatifPresent();
 	}
+	
+	public String conjugue2emePersonnePlurielIndicatifPresent() {
+		return "Vous " + this.radical + this.terminaison2emePersonnePlurielInficatifPresent();
+	}
+	
+	public String conjugue3emePersonnePlurielIndicatifPresent() {
+		return null;
+	}
 
 	//------------------------------------------------//
 
@@ -71,6 +79,10 @@ public abstract class Verbe {
 	public String terminaison1erePersonnePlurielIndicatifPresent() {
 		return avantTerminaison1erePersonnePluriel() + "ons";
 	}
+	
+	public String terminaison2emePersonnePlurielIndicatifPresent() {
+		return avantTerminaison2emePersonnePluriel() + "ez";
+	}
 
 	//------------------------------------------------//
 
@@ -81,5 +93,7 @@ public abstract class Verbe {
 	public abstract String avantTerminaison3emePersonneSingulier();
 
 	public abstract String avantTerminaison1erePersonnePluriel();
+	
+	public abstract String avantTerminaison2emePersonnePluriel();
 
 }
