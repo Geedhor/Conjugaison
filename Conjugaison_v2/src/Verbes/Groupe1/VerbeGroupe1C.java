@@ -23,6 +23,10 @@ public class VerbeGroupe1C extends VerbeGroupe1{
 		return "ç";
 	}
 	
+	public String avantTerminaison2emePersonnePluriel() {
+		return "c";
+	}
+	
 	public String getFin() {
 		return "cer";
 	}
