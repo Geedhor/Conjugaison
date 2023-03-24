@@ -83,4 +83,62 @@ public abstract class Verbe {
 	
 	public abstract String avantTerminaison2_3emePersonnePlurielIndicatifPresent();
 
+
+
+	/* ------ Indicatif Futur ------ */
+
+	public String conjugue1erePersonneSingulierIndicatifFutur() {
+		return this.radical + this.terminaison1erePersonneSingulierIndicatifFutur();
+	}
+
+	public String conjugue2emePersonneSingulierIndicatifFutur() {
+		return this.radical + this.terminaison2emePersonneSingulierIndicatifFutur();
+	}
+
+	public String conjugue3emePersonneSingulierIndicatifFutur() {
+		return this.radical + this.terminaison3emePersonneSingulierIndicatifFutur();
+	}
+
+	public String conjugue1erePersonnePlurielIndicatifFutur() {
+		return this.radical + this.terminaison1erePersonnePlurielIndicatifFutur();
+	}
+
+	public String conjugue2emePersonnePlurielIndicatifFutur() {
+		return this.radical + this.terminaison2emePersonnePlurielIndicatifFutur();
+	}
+
+	public String conjugue3emePersonnePlurielIndicatifFutur() {
+		return this.radical + this.terminaison3emePersonnePlurielIndiactifFutur();
+	}
+
+	//------------------------------------------------//
+
+	public String terminaison1erePersonneSingulierIndicatifFutur() {
+		return avantTerminaisonIndicatifFutur() + "ai";
+	}
+
+	public String terminaison2emePersonneSingulierIndicatifFutur() {
+		return avantTerminaisonIndicatifFutur() + "as";
+	}
+
+	public String terminaison3emePersonneSingulierIndicatifFutur() {
+		return avantTerminaisonIndicatifFutur() + "a";
+	}
+
+	public String terminaison1erePersonnePlurielIndicatifFutur() {
+		return avantTerminaisonIndicatifFutur() + "ons";
+	}
+
+	public String terminaison2emePersonnePlurielIndicatifFutur() {
+		return avantTerminaisonIndicatifFutur() + "ez";
+	}
+
+	public String terminaison3emePersonnePlurielIndiactifFutur() {
+		return avantTerminaisonIndicatifFutur() + "ont";
+	}
+
+	//------------------------------------------------//
+
+	public abstract String avantTerminaisonIndicatifFutur();
+
 }

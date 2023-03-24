@@ -1,6 +1,7 @@
 package Serveur;
 
 import Conjugaison.Conjugaison;
+import Conjugaison.Indicatif.ConjugaisonIndicatifFutur;
 import Conjugaison.Indicatif.ConjugaisonIndicatifPresent;
 import Expert.*;
 import Verbes.Verbe;
@@ -60,7 +61,7 @@ public class MultiThread extends Thread {
 
 
                 Verbe res = expert.resoudre(verbe);
-                Conjugaison c = new ConjugaisonIndicatifPresent();
+                Conjugaison c = new ConjugaisonIndicatifFutur();
 
                 String texte;
                 if(res==null){

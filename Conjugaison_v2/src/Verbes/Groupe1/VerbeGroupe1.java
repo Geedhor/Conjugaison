@@ -35,4 +35,8 @@ public class VerbeGroupe1 extends Verbe{
 		return "";
 	}
 
+	//------------------------------------------------//
+
+	public String avantTerminaisonIndicatifFutur() { return getFin(); }
+
 }

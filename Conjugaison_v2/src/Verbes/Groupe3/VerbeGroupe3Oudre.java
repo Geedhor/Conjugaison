@@ -36,4 +36,8 @@ public class VerbeGroupe3Oudre extends Verbe{
         return "olv";
     }
 
+    //------------------------------------------------//
+
+    public String avantTerminaisonIndicatifFutur() { return "oudr"; }
+
 }

@@ -37,4 +37,8 @@ public class VerbeGroupe3Ettre extends Verbe {
     public String avantTerminaison2_3emePersonnePlurielIndicatifPresent() {
         return "ett";
     }
+
+    //------------------------------------------------//
+
+    public String avantTerminaisonIndicatifFutur() { return "ettr"; }
 }

@@ -36,4 +36,8 @@ public class VerbeGroupe2 extends Verbe{
 		return "iss";
 	}
 
+	//------------------------------------------------//
+
+	public String avantTerminaisonIndicatifFutur() { return getFin(); }
+
 }

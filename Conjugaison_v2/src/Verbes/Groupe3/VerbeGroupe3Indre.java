@@ -36,4 +36,8 @@ public class VerbeGroupe3Indre extends Verbe{
 		return "ign";
 	}
 
+	//------------------------------------------------//
+
+	public String avantTerminaisonIndicatifFutur() { return "indr"; }
+
 }

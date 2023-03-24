@@ -38,4 +38,8 @@ public class VerbeGroupe3Aitre extends Verbe{
 		return "aiss";
 	}
 
+	//------------------------------------------------//
+
+	public String avantTerminaisonIndicatifFutur() { return "aîtr"; }
+
 }
