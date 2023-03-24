@@ -40,7 +40,8 @@ public class MultiThread extends Thread {
     public void run() {
 
         Expert expert;
-        ExpertVerbe e6 = new ExpertVerbe6Indre(null);
+        ExpertVerbe e7 = new ExpertVerbe7Ettre(null);
+        ExpertVerbe e6 = new ExpertVerbe6Indre(e7);
         ExpertVerbe e5 = new ExpertVerbe5Aitre(e6);
         ExpertVerbe e4 = new ExpertVerbe4Ir(e5);
         ExpertVerbe e3 = new ExpertVerbe3Er(e4);
