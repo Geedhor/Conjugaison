@@ -36,8 +36,18 @@ public class VerbeGroupe2 extends Verbe{
 		return "iss";
 	}
 
+
 	//------------------------------------------------//
 
 	public String avantTerminaisonIndicatifFutur() { return getFin(); }
+
+	//------------------------------------------------//
+
+
+	public String terminaisonIndicatifPasseCompose() {
+		return avantTerminaisonIndicatifPasseCompose() + "i";
+	}
+
+	public String avantTerminaisonIndicatifPasseCompose() { return ""; }
 
 }

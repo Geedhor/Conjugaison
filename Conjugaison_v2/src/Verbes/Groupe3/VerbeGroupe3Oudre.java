@@ -40,4 +40,13 @@ public class VerbeGroupe3Oudre extends Verbe{
 
     public String avantTerminaisonIndicatifFutur() { return "oudr"; }
 
+    //------------------------------------------------//
+
+
+    public String terminaisonIndicatifPasseCompose() {
+        return avantTerminaisonIndicatifPasseCompose() + "olu";
+    }
+
+    public String avantTerminaisonIndicatifPasseCompose() { return ""; }
+
 }

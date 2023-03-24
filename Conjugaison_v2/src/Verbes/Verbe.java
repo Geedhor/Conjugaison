@@ -113,9 +113,7 @@ public abstract class Verbe {
 
 	//------------------------------------------------//
 
-	public String terminaison1erePersonneSingulierIndicatifFutur() {
-		return avantTerminaisonIndicatifFutur() + "ai";
-	}
+	public String terminaison1erePersonneSingulierIndicatifFutur() { return avantTerminaisonIndicatifFutur() + "ai"; }
 
 	public String terminaison2emePersonneSingulierIndicatifFutur() {
 		return avantTerminaisonIndicatifFutur() + "as";
@@ -141,4 +139,15 @@ public abstract class Verbe {
 
 	public abstract String avantTerminaisonIndicatifFutur();
 
+
+
+	/* ------ Indicatif Passé Composé ------ */
+
+	public String conjugueIndicatifPasseCompose() {
+		return avantTerminaisonIndicatifPasseCompose() + terminaisonIndicatifPasseCompose();
+	}
+
+	public abstract String terminaisonIndicatifPasseCompose();
+
+	public abstract String avantTerminaisonIndicatifPasseCompose();
 }

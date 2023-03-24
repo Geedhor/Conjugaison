@@ -23,4 +23,6 @@ public class VerbeGroupe1C extends VerbeGroupe1{
 		return "c";
 	}
 
+	public String avantTerminaisonIndicatifPasseCompose() { return "c"; }
+
 }

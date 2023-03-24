@@ -40,4 +40,13 @@ public class VerbeGroupe3Indre extends Verbe{
 
 	public String avantTerminaisonIndicatifFutur() { return "indr"; }
 
+	//------------------------------------------------//
+
+
+	public String terminaisonIndicatifPasseCompose() {
+		return avantTerminaisonIndicatifPasseCompose() + "int";
+	}
+
+	public String avantTerminaisonIndicatifPasseCompose() { return ""; }
+
 }

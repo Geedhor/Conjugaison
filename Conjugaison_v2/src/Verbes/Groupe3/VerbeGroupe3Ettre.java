@@ -41,4 +41,13 @@ public class VerbeGroupe3Ettre extends Verbe {
     //------------------------------------------------//
 
     public String avantTerminaisonIndicatifFutur() { return "ettr"; }
+
+    //------------------------------------------------//
+
+
+    public String terminaisonIndicatifPasseCompose() {
+        return avantTerminaisonIndicatifPasseCompose() + "is";
+    }
+
+    public String avantTerminaisonIndicatifPasseCompose() { return ""; }
 }
