@@ -39,15 +39,15 @@ public class MultiThread extends Thread {
     @Override
     public void run() {
 
-        Expert expert;
-        ExpertVerbe e7 = new ExpertVerbe7Ettre(null);
+        ExpertVerbe e8 = new ExpertVerbe8Oudre(null);
+        ExpertVerbe e7 = new ExpertVerbe7Ettre(e8);
         ExpertVerbe e6 = new ExpertVerbe6Indre(e7);
         ExpertVerbe e5 = new ExpertVerbe5Aitre(e6);
         ExpertVerbe e4 = new ExpertVerbe4Ir(e5);
         ExpertVerbe e3 = new ExpertVerbe3Er(e4);
         ExpertVerbe e2 = new ExpertVerbe2Ger(e3);
         ExpertVerbe e1 = new ExpertVerbe1Cer(e2);
-        expert = e1;
+        Expert expert = e1;
         //------------------------//
         try{
 
