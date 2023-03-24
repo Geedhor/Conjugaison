@@ -13,26 +13,18 @@ public class VerbeGroupe2 extends Verbe{
 
 	
 	public String terminaison1erePersonneSingulierIndicatifPresent() {
-		return avantTerminaison1erePersonneSingulierIndicatifPresent() + "is";
+		return avantTerminaisonSingulierIndicatifPresent() + "is";
 	}
 
 	public String terminaison2emePersonneSingulierIndicatifPresent() {
-		return avantTerminaison2emePersonneSingulierIndicatifPresent() + "is";
+		return avantTerminaisonSingulierIndicatifPresent() + "is";
 	}
 
 	public String terminaison3emePersonneSingulierIndicatifPresent() {
-		return avantTerminaison3emePersonneSingulierIndicatifPresent() + "it";
+		return avantTerminaisonSingulierIndicatifPresent() + "it";
 	}
 
-	public String avantTerminaison1erePersonneSingulierIndicatifPresent() {
-		return "";
-	}
-
-	public String avantTerminaison2emePersonneSingulierIndicatifPresent() {
-		return "";
-	}
-
-	public String avantTerminaison3emePersonneSingulierIndicatifPresent() {
+	public String avantTerminaisonSingulierIndicatifPresent() {
 		return "";
 	}
 	
@@ -40,10 +32,8 @@ public class VerbeGroupe2 extends Verbe{
 		return "iss";
 	}
 	
-	public String avantTerminaison2emePersonnePlurielIndicatifPresent() {
+	public String avantTerminaison2_3emePersonnePlurielIndicatifPresent() {
 		return "iss";
 	}
-
-	public String avantTerminaison3emePersonnePlurielIndicatifPresent() { return "iss"; }
 
 }

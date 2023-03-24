@@ -11,15 +11,7 @@ public class VerbeGroupe1G extends VerbeGroupe1{
 	}
 
 	
-	public String avantTerminaison1erePersonneSingulierIndicatifPresent() {
-		return "g";
-	}
-
-	public String avantTerminaison2emePersonneSingulierIndicatifPresent() {
-		return "g"; 
-	}
-	
-	public String avantTerminaison3emePersonneSingulierIndicatifPresent() {
+	public String avantTerminaisonSingulierIndicatifPresent() {
 		return "g";
 	}
 	
@@ -27,10 +19,8 @@ public class VerbeGroupe1G extends VerbeGroupe1{
 		return "ge";
 	}
 	
-	public String avantTerminaison2emePersonnePlurielIndicatifPresent() {
+	public String avantTerminaison2_3emePersonnePlurielIndicatifPresent() {
 		return "g";
 	}
-
-	public String avantTerminaison3emePersonnePlurielIndicatifPresent() { return "g"; }
 
 }

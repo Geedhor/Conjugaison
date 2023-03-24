@@ -11,15 +11,7 @@ public class VerbeGroupe1C extends VerbeGroupe1{
 	}
 
 
-	public String avantTerminaison1erePersonneSingulierIndicatifPresent() {
-		return "c";
-	}
-
-	public String avantTerminaison2emePersonneSingulierIndicatifPresent() {
-		return "c"; 
-	}
-	
-	public String avantTerminaison3emePersonneSingulierIndicatifPresent() {
+	public String avantTerminaisonSingulierIndicatifPresent() {
 		return "c";
 	}
 	
@@ -27,10 +19,8 @@ public class VerbeGroupe1C extends VerbeGroupe1{
 		return "ç";
 	}
 	
-	public String avantTerminaison2emePersonnePlurielIndicatifPresent() {
+	public String avantTerminaison2_3emePersonnePlurielIndicatifPresent() {
 		return "c";
 	}
-
-	public String avantTerminaison3emePersonnePlurielIndicatifPresent() { return "c"; }
 
 }

@@ -12,7 +12,7 @@ public abstract class Verbe {
 		}
 	}
 
-	/* ------ Indicatif Present ------ */
+	//------------------------------------------------//
 
 	public boolean legalVerbe(String v) {
 		return v.endsWith(getFin());
@@ -28,7 +28,8 @@ public abstract class Verbe {
 		return this.radical;
 	}
 
-	//------------------------------------------------//
+
+	/* ------ Indicatif Present ------ */
 
 	public String conjugue1erePersonneSingulierIndicatifPresent() {
 		return this.radical + this.terminaison1erePersonneSingulierIndicatifPresent();
@@ -56,42 +57,30 @@ public abstract class Verbe {
 
 	//------------------------------------------------//
 
-	public String terminaison1erePersonneSingulierIndicatifPresent() {
-		return avantTerminaison1erePersonneSingulierIndicatifPresent() + terminaison1erePersonneSingulierIndicatifPresent();
-	}
+	public abstract String terminaison1erePersonneSingulierIndicatifPresent();
 
-	public String terminaison2emePersonneSingulierIndicatifPresent() {
-		return avantTerminaison2emePersonneSingulierIndicatifPresent() + terminaison2emePersonneSingulierIndicatifPresent();
-	}
+	public abstract String terminaison2emePersonneSingulierIndicatifPresent();
 
-	public String terminaison3emePersonneSingulierIndicatifPresent() {
-		return avantTerminaison3emePersonneSingulierIndicatifPresent() + terminaison3emePersonneSingulierIndicatifPresent();
-	}
+	public abstract String terminaison3emePersonneSingulierIndicatifPresent();
 
 	public String terminaison1erePersonnePlurielIndicatifPresent() {
 		return avantTerminaison1erePersonnePlurielIndicatifPresent() + "ons";
 	}
 	
 	public String terminaison2emePersonnePlurielIndicatifPresent() {
-		return avantTerminaison2emePersonnePlurielIndicatifPresent() + "ez";
+		return avantTerminaison2_3emePersonnePlurielIndicatifPresent() + "ez";
 	}
 
 	public String terminaison3emePersonnePlurielIndiactifPresent() {
-		return avantTerminaison3emePersonnePlurielIndicatifPresent() + "ent";
+		return avantTerminaison2_3emePersonnePlurielIndicatifPresent() + "ent";
 	}
 
 	//------------------------------------------------//
 
-	public abstract String avantTerminaison1erePersonneSingulierIndicatifPresent();
-	
-	public abstract String avantTerminaison2emePersonneSingulierIndicatifPresent();
-	
-	public abstract String avantTerminaison3emePersonneSingulierIndicatifPresent();
+	public abstract String avantTerminaisonSingulierIndicatifPresent();
 
 	public abstract String avantTerminaison1erePersonnePlurielIndicatifPresent();
 	
-	public abstract String avantTerminaison2emePersonnePlurielIndicatifPresent();
-
-	public abstract String avantTerminaison3emePersonnePlurielIndicatifPresent();
+	public abstract String avantTerminaison2_3emePersonnePlurielIndicatifPresent();
 
 }
