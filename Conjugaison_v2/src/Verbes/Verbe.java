@@ -12,6 +12,22 @@ public abstract class Verbe {
 		}
 	}
 
+	/* ------ Indicatif Present ------ */
+
+	public boolean legalVerbe(String v) {
+		return v.endsWith(getFin());
+	}
+
+	public abstract String getFin();
+
+	public int tailleFin() {
+		return getFin().length();
+	}
+
+	public String getRadical(){
+		return this.radical;
+	}
+
 	//------------------------------------------------//
 
 	public String conjugue1erePersonneSingulierIndicatifPresent() {
@@ -35,24 +51,7 @@ public abstract class Verbe {
 	}
 	
 	public String conjugue3emePersonnePlurielIndicatifPresent() {
-		return "";
-	}
-
-	//------------------------------------------------//
-
-	
-	public boolean legalVerbe(String v) {
-		return v.endsWith(getFin());
-	}
-	
-	public abstract String getFin();
-	
-	public int tailleFin() {
-		return getFin().length();
-	}
-
-	public String getRadical(){
-		return this.radical;
+		return this.radical + this.terminaison3emePersonnePlurielIndiactifPresent();
 	}
 
 	//------------------------------------------------//
@@ -77,6 +76,10 @@ public abstract class Verbe {
 		return avantTerminaison2emePersonnePlurielIndicatifPresent() + "ez";
 	}
 
+	public String terminaison3emePersonnePlurielIndiactifPresent() {
+		return avantTerminaison3emePersonnePlurielIndicatifPresent() + "ent";
+	}
+
 	//------------------------------------------------//
 
 	public abstract String avantTerminaison1erePersonneSingulierIndicatifPresent();
@@ -88,5 +91,7 @@ public abstract class Verbe {
 	public abstract String avantTerminaison1erePersonnePlurielIndicatifPresent();
 	
 	public abstract String avantTerminaison2emePersonnePlurielIndicatifPresent();
+
+	public abstract String avantTerminaison3emePersonnePlurielIndicatifPresent();
 
 }

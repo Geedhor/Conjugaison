@@ -6,6 +6,10 @@ public class VerbeGroupe1C extends VerbeGroupe1{
 		super(v);
 	}
 
+	public String getFin() {
+		return "cer";
+	}
+
 
 	public String avantTerminaison1erePersonneSingulierIndicatifPresent() {
 		return "c";
@@ -26,8 +30,7 @@ public class VerbeGroupe1C extends VerbeGroupe1{
 	public String avantTerminaison2emePersonnePlurielIndicatifPresent() {
 		return "c";
 	}
-	
-	public String getFin() {
-		return "cer";
-	}
+
+	public String avantTerminaison3emePersonnePlurielIndicatifPresent() { return "c"; }
+
 }

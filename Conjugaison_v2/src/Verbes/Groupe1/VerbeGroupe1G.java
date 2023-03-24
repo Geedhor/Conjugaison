@@ -5,6 +5,11 @@ public class VerbeGroupe1G extends VerbeGroupe1{
 	public VerbeGroupe1G(String v) {
 		super(v);
 	}
+
+	public String getFin() {
+		return "ger";
+	}
+
 	
 	public String avantTerminaison1erePersonneSingulierIndicatifPresent() {
 		return "g";
@@ -26,8 +31,6 @@ public class VerbeGroupe1G extends VerbeGroupe1{
 		return "g";
 	}
 
-	
-	public String getFin() {
-		return "ger";
-	}
+	public String avantTerminaison3emePersonnePlurielIndicatifPresent() { return "g"; }
+
 }
