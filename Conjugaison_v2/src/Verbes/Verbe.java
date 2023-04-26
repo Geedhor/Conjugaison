@@ -144,7 +144,7 @@ public abstract class Verbe {
 	/* ------ Indicatif Passé Composé ------ */
 
 	public String conjugueIndicatifPasseCompose() {
-		return avantTerminaisonIndicatifPasseCompose() + terminaisonIndicatifPasseCompose();
+		return this.radical + avantTerminaisonIndicatifPasseCompose() + terminaisonIndicatifPasseCompose();
 	}
 
 	public abstract String terminaisonIndicatifPasseCompose();

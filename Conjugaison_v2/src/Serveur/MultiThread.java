@@ -2,6 +2,7 @@ package Serveur;
 
 import Conjugaison.Conjugaison;
 import Conjugaison.Indicatif.ConjugaisonIndicatifFutur;
+import Conjugaison.Indicatif.ConjugaisonIndicatifPasseCompose;
 import Conjugaison.Indicatif.ConjugaisonIndicatifPresent;
 import Expert.*;
 import Verbes.Verbe;
@@ -61,7 +62,7 @@ public class MultiThread extends Thread {
 
 
                 Verbe res = expert.resoudre(verbe);
-                Conjugaison c = new ConjugaisonIndicatifFutur();
+                Conjugaison c = new ConjugaisonIndicatifPasseCompose();
 
                 String texte;
                 if(res==null){
