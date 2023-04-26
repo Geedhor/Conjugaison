@@ -1,11 +1,8 @@
 package Serveur;
 
 import Conjugaison.Conjugaison;
-import Conjugaison.Indicatif.ConjugaisonIndicatifFutur;
 import Conjugaison.Indicatif.ConjugaisonIndicatifPasseCompose;
 import Expert.*;
-import Verbes.Groupe1.VerbeGroupe1C;
-import Verbes.Groupe1.VerbeGroupe1G;
 import Verbes.Verbe;
 
 import java.io.BufferedReader;
@@ -42,15 +39,20 @@ public class MultiThread extends Thread {
     @Override
     public void run() {
 
-        ExpertVerbe e8 = new ExpertVerbe8Oudre(null);
-        ExpertVerbe e7 = new ExpertVerbe7Ettre(e8);
-        ExpertVerbe e6 = new ExpertVerbe6Indre(e7);
-        ExpertVerbe e5 = new ExpertVerbe5Aitre(e6);
-        ExpertVerbe e4 = new ExpertVerbe4Ir(e5);
-        ExpertVerbe e3 = new ExpertVerbe3Er(e4);
-        ExpertVerbe e2 = new ExpertVerbe2Ger(e3);
-        ExpertVerbe e1 = new ExpertVerbe1Cer(e2);
-        Expert expertV = e1;
+        ExpertEnsemble v8 = new ExpertVerbe8Oudre(null);
+        ExpertEnsemble v7 = new ExpertVerbe7Ettre(v8);
+        ExpertEnsemble v6 = new ExpertVerbe6Indre(v7);
+        ExpertEnsemble v5 = new ExpertVerbe5Aitre(v6);
+        ExpertEnsemble v4 = new ExpertVerbe4Ir(v5);
+        ExpertEnsemble v3 = new ExpertVerbe3Er(v4);
+        ExpertEnsemble v2 = new ExpertVerbe2Ger(v3);
+        ExpertEnsemble v1 = new ExpertVerbe1Cer(v2);
+        Expert expertV = v1;
+
+        ExpertEnsemble c3 = new ExpertConjugaisonIndFut(null);
+        ExpertEnsemble c2 = new ExpertConjugaisonIndPaC(c3);
+        ExpertEnsemble c1 = new ExpertConjugaisonIndPre(c2);
+        Expert expertC = c1;
         //------------------------//
         try{
 
@@ -63,13 +65,17 @@ public class MultiThread extends Thread {
 
 
                 Verbe res = (Verbe) expertV.resoudre(verbe);
-                Conjugaison c = new ConjugaisonIndicatifPasseCompose();
+                Conjugaison c = (Conjugaison) expertC.resoudre("Indicatif Present");
 
                 String texte;
                 if(res==null){
                     texte = "Le verbe '" + verbe + "' n'est pas géré";
                 }else{
-                    texte = c.conjuger(res);
+                    if(c==null){
+                        texte = "Ce temps n'est pas reconnu";
+                    }else{
+                        texte = c.conjuger(res);
+                    }
                 }
 
                 int nbline = countLines(texte);

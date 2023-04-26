@@ -3,9 +3,9 @@ package Expert;
 import Verbes.Groupe3.VerbeGroupe3Oudre;
 import Verbes.Verbe;
 
-public class ExpertVerbe8Oudre extends ExpertVerbe {
+public class ExpertVerbe8Oudre extends ExpertEnsemble {
 
-    public ExpertVerbe8Oudre(ExpertVerbe e) {
+    public ExpertVerbe8Oudre(ExpertEnsemble e) {
         super(e);
     }
 

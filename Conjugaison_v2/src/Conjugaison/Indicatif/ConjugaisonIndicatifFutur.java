@@ -5,6 +5,10 @@ import Verbes.Verbe;
 
 public class ConjugaisonIndicatifFutur extends Conjugaison {
 
+	public ConjugaisonIndicatifFutur(String t){
+		super(t);
+	}
+
 	public String conjuguer1erePersonneSingulier(Verbe v) {
 		return v.conjugue1erePersonneSingulierIndicatifFutur();
 	}
@@ -28,4 +32,6 @@ public class ConjugaisonIndicatifFutur extends Conjugaison {
 	public String conjuguer3emePersonnePluriel(Verbe v) {
 		return v.conjugue3emePersonnePlurielIndicatifFutur();
 	}
+
+	public String getTemps(){ return "Indicatif Futur"; }
 }

@@ -5,6 +5,12 @@ import Verbes.Verbe;
 
 public abstract class Conjugaison extends Ensemble {
 
+	public Conjugaison(String t) {
+		if(!legalTemps(t)){
+			throw new IllegalArgumentException("Temps incorrect");
+		}
+	}
+
 	public String conjuger(Verbe v){
 		return
 			jOuJe(v) + conjuguer1erePersonneSingulier(v) + '\n' +
@@ -14,6 +20,12 @@ public abstract class Conjugaison extends Ensemble {
 			"Vous " + conjuguer2emePersonnePluriel(v) + '\n' +
 			"Ils/Elles " + conjuguer3emePersonnePluriel(v);
 	}
+
+	public boolean legalTemps(String t) {
+		return t.equals(getTemps());
+	}
+
+	public abstract String getTemps();
 
 	public boolean estVoyelle(String c) {
 		return "aeiouy".contains(c);
