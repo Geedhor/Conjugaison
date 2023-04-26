@@ -1,6 +1,8 @@
 package Verbes;
 
-public abstract class Verbe {
+import Expert.Ensemble;
+
+public abstract class Verbe extends Ensemble {
 	
 	protected String radical;
 	
@@ -144,10 +146,10 @@ public abstract class Verbe {
 	/* ------ Indicatif Passé Composé ------ */
 
 	public String conjugueIndicatifPasseCompose() {
-		return this.radical + avantTerminaisonIndicatifPasseCompose() + terminaisonIndicatifPasseCompose();
+		return this.radical + terminaisonIndicatifPasseCompose();
 	}
 
 	public abstract String terminaisonIndicatifPasseCompose();
 
-	public abstract String avantTerminaisonIndicatifPasseCompose();
+	//public abstract String avantTerminaisonIndicatifPasseCompose();
 }

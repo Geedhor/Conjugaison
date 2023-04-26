@@ -14,7 +14,7 @@ public class ConjugaisonIndicatifPasseCompose extends Conjugaison {
     }
 
     public String conjuguer3emePersonneSingulier(Verbe v) {
-        return " a " + v.conjugueIndicatifPasseCompose();
+        return "a " + v.conjugueIndicatifPasseCompose();
     }
 
     public String conjuguer1erePersonnePluriel(Verbe v) {

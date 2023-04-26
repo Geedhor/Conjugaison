@@ -1,8 +1,9 @@
 package Conjugaison;
 
+import Expert.Ensemble;
 import Verbes.Verbe;
 
-public abstract class Conjugaison {
+public abstract class Conjugaison extends Ensemble {
 
 	public String conjuger(Verbe v){
 		return
@@ -19,7 +20,7 @@ public abstract class Conjugaison {
 	}
 
 	public String jOuJe(Verbe v) {
-		if(estVoyelle(v.getRadical().substring(0,1))) {
+		if(estVoyelle(conjuguer1erePersonnePluriel(v).substring(0,1))) {
 			return "J'";
 		} else {
 			return "Je ";

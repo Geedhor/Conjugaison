@@ -3,8 +3,9 @@ package Serveur;
 import Conjugaison.Conjugaison;
 import Conjugaison.Indicatif.ConjugaisonIndicatifFutur;
 import Conjugaison.Indicatif.ConjugaisonIndicatifPasseCompose;
-import Conjugaison.Indicatif.ConjugaisonIndicatifPresent;
 import Expert.*;
+import Verbes.Groupe1.VerbeGroupe1C;
+import Verbes.Groupe1.VerbeGroupe1G;
 import Verbes.Verbe;
 
 import java.io.BufferedReader;
@@ -49,7 +50,7 @@ public class MultiThread extends Thread {
         ExpertVerbe e3 = new ExpertVerbe3Er(e4);
         ExpertVerbe e2 = new ExpertVerbe2Ger(e3);
         ExpertVerbe e1 = new ExpertVerbe1Cer(e2);
-        Expert expert = e1;
+        Expert expertV = e1;
         //------------------------//
         try{
 
@@ -61,7 +62,7 @@ public class MultiThread extends Thread {
                 verbe = verbe.trim();
 
 
-                Verbe res = expert.resoudre(verbe);
+                Verbe res = (Verbe) expertV.resoudre(verbe);
                 Conjugaison c = new ConjugaisonIndicatifPasseCompose();
 
                 String texte;

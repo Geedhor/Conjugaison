@@ -2,7 +2,7 @@ package Expert;
 
 import Verbes.Verbe;
 
-public abstract class ExpertVerbe implements Expert{
+public abstract class ExpertVerbe implements Expert {
 
 	ExpertVerbe suivant;
 	
