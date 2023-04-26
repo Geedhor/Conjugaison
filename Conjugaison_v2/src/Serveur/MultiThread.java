@@ -63,9 +63,10 @@ public class MultiThread extends Thread {
                 System.out.println(" le client n° "+this._numClient+" a envoyé : " + verbe);
                 verbe = verbe.trim();
 
+                String temps = "Indicatif Present";
 
                 Verbe res = (Verbe) expertV.resoudre(verbe);
-                Conjugaison c = (Conjugaison) expertC.resoudre("Indicatif Present");
+                Conjugaison c = (Conjugaison) expertC.resoudre(temps);
 
                 String texte;
                 if(res==null){

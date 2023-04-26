@@ -71,7 +71,7 @@ public class AwtUser extends Frame{
         // Label de la partie infinitif //
         Label Infinitiftxt = new Label("Entrez l'infinitif");
         add(Infinitiftxt);
-        Infinitiftxt.setBounds(20,280,100,25);
+        Infinitiftxt.setBounds(20,280,200,30);
         Infinitiftxt.setForeground(new java.awt.Color(0,0,0));
         Infinitiftxt.setFont(myFont);
         //******************************//
@@ -82,10 +82,24 @@ public class AwtUser extends Frame{
         Infinitif.setBounds(20,310,200,30);
         //**********************************//
 
+        // Label de la partie infinitif //
+        Label tempsTxt = new Label("Entrez le temps");
+        add(tempsTxt);
+        tempsTxt.setBounds(20,360,200,30);
+        tempsTxt.setForeground(new java.awt.Color(0,0,0));
+        tempsTxt.setFont(myFont);
+        //******************************//
+
+        // Entrer de texte pour l'infinitif //
+        TextField temps = new TextField();
+        add(temps);
+        temps.setBounds(20,390,200,30);
+        //**********************************//
+
         // boutton de demande de conjugaison//
         Button Requete = new Button("Conjuger");
         add(Requete);
-        Requete.setBounds(70,350,100,25);
+        Requete.setBounds(70,450,100,25);
         //**********************************//
 
         // Texte indiquant si on est connecter au serveur //
