@@ -69,31 +69,37 @@ public class AwtUser extends Frame{
         //**********************//
 
         // Label de la partie infinitif //
-        Label Infinitiftxt = new Label("Entrez l'infinitif");
-        add(Infinitiftxt);
-        Infinitiftxt.setBounds(20,280,200,30);
-        Infinitiftxt.setForeground(new java.awt.Color(0,0,0));
-        Infinitiftxt.setFont(myFont);
+        Label infinitiftxt = new Label("Entrez l'infinitif et le temps :");
+        Label exemple = new Label("ex: 'parler, Inficatif Présent'");
+
+        add(infinitiftxt);
+        add(exemple);
+        infinitiftxt.setBounds(20,280,200,20);
+        exemple.setBounds(20,300,200,30);
+        infinitiftxt.setForeground(new java.awt.Color(0,0,0));
+        exemple.setForeground(new java.awt.Color(0,0,0));
+        infinitiftxt.setFont(myFont);
+        exemple.setFont(myFont);
         //******************************//
 
         // Entrer de texte pour l'infinitif //
         TextField Infinitif = new TextField();
         add(Infinitif);
-        Infinitif.setBounds(20,310,200,30);
+        Infinitif.setBounds(20,330,200,30);
         //**********************************//
 
         // Label de la partie infinitif //
-        Label tempsTxt = new Label("Entrez le temps");
+        /*Label tempsTxt = new Label("Entrez le temps");
         add(tempsTxt);
         tempsTxt.setBounds(20,360,200,30);
         tempsTxt.setForeground(new java.awt.Color(0,0,0));
-        tempsTxt.setFont(myFont);
+        tempsTxt.setFont(myFont);*/
         //******************************//
 
         // Entrer de texte pour l'infinitif //
-        TextField temps = new TextField();
+        /*TextField temps = new TextField();
         add(temps);
-        temps.setBounds(20,390,200,30);
+        temps.setBounds(20,390,200,30);*/
         //**********************************//
 
         // boutton de demande de conjugaison//

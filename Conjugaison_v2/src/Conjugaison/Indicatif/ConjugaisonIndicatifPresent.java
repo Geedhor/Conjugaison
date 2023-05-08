@@ -34,6 +34,6 @@ public class ConjugaisonIndicatifPresent extends Conjugaison {
 	}
 
 	public String getTemps(){
-		return "Indicatif Present";
+		return "Indicatif Présent";
 	}
 }
