@@ -140,6 +140,7 @@ public class AwtUser extends Frame{
             public void actionPerformed(ActionEvent e) {
                 BufferedReader fluxEntrant;
                 PrintStream fluxSortant;
+
                 try {
                     fluxEntrant = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
                     fluxSortant = new PrintStream(clientSocket.getOutputStream());

@@ -63,7 +63,15 @@ public class MultiThread extends Thread {
                 System.out.println(" le client n° "+this._numClient+" a envoyé : " + verbe);
                 verbe = verbe.trim();
 
+                /*
+                String verbe = fluxEntrant.readLine();
+                String [] reception = verbe.split(", ");
+                System.out.println(" le client n° "+this._numClient+" a envoyé : " + verbe);
+                verbe = reception[0].trim();
+                */
+
                 String temps = "Indicatif Present";
+                /*String temps = reception[1]; */
 
                 Verbe res = (Verbe) expertV.resoudre(verbe);
                 Conjugaison c = (Conjugaison) expertC.resoudre(temps);

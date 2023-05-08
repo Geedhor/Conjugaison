@@ -120,6 +120,7 @@ public class AwtUser extends Frame{
                 BufferedReader fluxEntrant;
                 PrintStream fluxSortant;
                 try {
+
                     fluxEntrant = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
                     fluxSortant = new PrintStream(clientSocket.getOutputStream());
 
@@ -131,6 +132,7 @@ public class AwtUser extends Frame{
                     for (int i = 0; i <= line; i++){
                         Conjugaison.append(fluxEntrant.readLine());
                         Conjugaison.append("\n");
+
                     }
 
 

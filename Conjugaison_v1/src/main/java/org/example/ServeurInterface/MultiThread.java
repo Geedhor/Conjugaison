@@ -52,8 +52,9 @@ public class MultiThread extends Thread {
             while (true){
 
                 String verbe = fluxEntrant.readLine();
+                String [] reception = verbe.split(",");
                 System.out.println(" le client n° "+this._numClient+" a envoyé : " + verbe);
-                verbe = verbe.trim();
+                verbe = reception[0].trim();
 
 
 
